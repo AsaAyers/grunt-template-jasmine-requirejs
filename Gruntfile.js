@@ -123,6 +123,13 @@ module.exports = function(grunt) {
           }
         }
       },
+      'require-loader': {
+        src: 'test/fixtures/require-loader/src/**/*.js',
+        options: {
+          specs: 'test/fixtures/require-loader/spec/**/*Spec.js',
+          template: require('./')
+        }
+      },
       'require-nobaseurl': {
         src: 'test/fixtures/require-nobaseurl/src/**/*.js',
         options: {
